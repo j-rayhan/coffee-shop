@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
-import { faSearch, faBars, faCartShopping, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faBars, faCartShopping, faTimes, faL } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from '../assets/images/logo.png'
 import cart1 from '../assets/images/cart-item-1.png'
@@ -48,8 +48,28 @@ const cartList: cart[] = [
     price: 14.99,
   },
 ]
+const toggleState = {
+  search: false,
+  cart: false,
+  menu: false,
+}
+type toggleType = typeof toggleState;
 
-const Header: React.FC = (props) => {
+const Header: React.FC = () => {
+
+  const [toggle, setToggle] = React.useState<toggleType>(toggleState)
+
+  const handleToggle = (type: 'search' | 'cart' | 'menu') => {
+    const res: toggleType = Object.keys(toggleState).reduce(
+      (attrs, key) => ({
+        ...attrs,
+        [key]: key === type ? !toggle[key] : false,
+      }),
+      toggle
+    );
+    setToggle(res)
+  }
+  
   return (
     <header className={styles.header}>
       {/* App LOGO */}
@@ -57,7 +77,7 @@ const Header: React.FC = (props) => {
         <Image className={styles.image} src={logo} alt="logo" />
       </a>
       {/* navbar */}
-      <nav className={styles.navbar}>
+      <nav className={`${styles.navbar} ${toggle.menu ? styles.active : ''}`}>
         <Link href="/">
           <a className={styles.menuLink}>Home</a>
         </Link>
@@ -82,23 +102,23 @@ const Header: React.FC = (props) => {
       </nav>
       {/* Icons Search, Cart, menu */}
       <div className={styles.icons}>
-        <div>
+        <div onClick={() => handleToggle('search')}>
           <FontAwesomeIcon className={styles.faIcon} icon={faSearch} />
         </div>
-        <div>
+        <div onClick={() => handleToggle('cart')}>
           <FontAwesomeIcon className={styles.faIcon} icon={faCartShopping} />
         </div>
-        <div>
+        <div onClick={() => handleToggle('menu')}>
           <FontAwesomeIcon className={styles.faIcon} icon={faBars} />
         </div>
       </div>
       {/* Search Form */}
-      <div className={styles.searchForm}>
+      <div className={`${styles.searchForm} ${toggle.search ? styles.active : ''}`}>
         <input type="search" id="search-box" className={styles.input} placeholder="search here..." />
         <FontAwesomeIcon icon={faSearch} className={styles.faIcon} />
       </div>
       {/* Cart items */}
-      <div className={styles.cartItemsContainer}>
+      <div className={`${styles.cartItemsContainer} ${toggle.cart ? styles.active : ''}`}>
         {cartList.map(({ key, name, image, price }) => (
           <div key={key} className={styles.cartItem}>
             <FontAwesomeIcon className={styles.faIcon} icon={faTimes} />
