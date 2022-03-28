@@ -1,0 +1,120 @@
+.header {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top:0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+.header .logo .image{
+  height: 6rem !important;
+}
+
+.header .navbar .menuLink{
+  margin:0 1rem;
+  font-size: 1.6rem;
+  color:#fff;
+}
+
+.header .navbar .menuLink:hover{
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.header .icons { 
+  display: flex;
+}
+
+.header .icons div{
+  color:#fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover{
+  color:var(--main-color);
+}
+
+.header .icons div:last-child {
+  display: none;
+}
+
+.header .searchForm {
+  position: absolute;
+  top: 115%; right: 7%;
+  width: 50rem;
+  height: 5rem;
+  align-items: center;
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.header .searchForm .input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.header .searchForm .faIcon {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-left: 1.6rem;
+  color: var(--black);
+}
+
+.header .searchForm .faIcon:hover {
+  color: var(--main-color);
+}
+
+.header .cartItemsContainer {
+  position: absolute;
+  top: 100%; right: -100%;
+  height: calc(100vh - 9.5rem);
+  width: 35rem;
+  padding: 0 1.5rem;
+  background-color: #fff;
+}
+
+.header .cartItemsContainer .cartItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 1.5rem;
+}
+
+.header .cartItemsContainer .cartItem .faIcon {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--black);
+}
+.header .cartItemsContainer .cartItem .faIcon:hover {
+  color: var(--main-color);
+}
+
+.header .cartItem .content .name {
+  font-size: 2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.header .cartItem .content .price {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+.header .cartItemsContainer .btn {
+  width: 100%;
+  text-align: center;
+}
