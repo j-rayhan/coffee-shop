@@ -1,18 +1,15 @@
-import { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import withHeaderMenu from '../component/withMenu'
 import aboutImg from '../assets/images/about-img.jpeg'
-import Header from '../component/header'
 import styles from '../styles/About.module.css'
 
-const About: NextPage = () => {
+const About: React.FC = () => {
   return (
     <div>
       <Head>
         <title>Responsive Coffee Shop About Page</title>
       </Head>
-      {/* Header menu */}
-      <Header />
       <section className={styles.about}>
         <h1 className='heading'><span className="span">About</span> us</h1>
         <div className={styles.row}>
@@ -31,4 +28,4 @@ const About: NextPage = () => {
   )
 }
 
-export default About;
+export default withHeaderMenu(About);
