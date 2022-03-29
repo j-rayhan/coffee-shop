@@ -1,5 +1,8 @@
+.menu {
+  margin-top: 10rem;
+}
+
 .menu .boxContainer {
-  margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap:1.5rem;

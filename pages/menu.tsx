@@ -80,7 +80,7 @@ const Menu: React.FC = () => {
               <div key={key} className={styles.box}>
                 <Image className={styles.image} src={image} alt={title} />
                 <h3 className={styles.title}>{title}</h3>
-                <div className={styles.price}>{price} <span className={styles.span}>{oldPrice}</span></div>
+                <div className={styles.price}>${price}/- <span className={styles.span}>${oldPrice}/-</span></div>
                 <a href="https://" className="btn">add to cart</a>
               </div>
             ))
