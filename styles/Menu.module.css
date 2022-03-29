@@ -1,0 +1,41 @@
+.menu .boxContainer {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
+}
+
+.menu .boxContainer .box {
+  padding: 5rem;
+  text-align: center;
+  border: var(--border);
+}
+
+.menu .boxContainer .box .image {
+  height: 10rem;
+}
+
+.menu .box .title {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.menu .box .price {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.menu .price .span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.menu .box:hover {
+  background-color: #fff;
+}
+
+.menu .box:hover > * {
+  color: var(--black);
+}
