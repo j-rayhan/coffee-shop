@@ -1,14 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../component/header'
-import styles from '../styles/Home.module.css'
+import HomeSection from './home'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
+      <Head>
+        <title>Responsive Coffee Shop Home Page</title>
+      </Head>
       {/* Header menu */}
       <Header />
+      {/* Home section */}
+      <HomeSection />
     </div>
   )
 }
