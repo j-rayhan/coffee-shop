@@ -45,6 +45,16 @@ section{
   padding:2rem 7%;
 }
 
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.4rem;
+}
+.heading .span {
+  color: var(--main-color);
+}
 .btn {
   display: inline-block;
   margin-top: 1rem;
