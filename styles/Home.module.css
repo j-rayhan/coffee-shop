@@ -24,3 +24,23 @@
   padding: 1rem 0;
   color: #FCFCFC;
 }
+
+/* ================================>  media queries <========================================== */
+
+@media (max-width:768px){
+
+  .home{
+      background-position: left;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .home .content .title {
+        font-size: 4.5rem;
+    }
+
+    .home .content .text{
+        font-size: 1.5rem;
+    }
+
+}
