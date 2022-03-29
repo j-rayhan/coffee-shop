@@ -1,0 +1,42 @@
+.review {
+  margin-top: 10rem;
+}
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
+}
+.box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #ccc;
+  padding: 2rem 0;
+}
+
+.image img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.stars {
+  padding: 1.5rem;
+}
+
+.stars .icon {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}

@@ -54,6 +54,7 @@ section{
   padding-bottom: 3.4rem;
 }
 .heading .span {
+  text-transform: uppercase;
   color: var(--main-color);
 }
 .btn {
