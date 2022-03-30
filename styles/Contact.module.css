@@ -1,0 +1,51 @@
+.contact {
+  margin-top: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--black);
+  gap:1rem;
+}
+
+.map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form {
+  flex: 1 1 45rem;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  background-color: var(--bg);
+  border: var(--border);
+}
+
+.inputBox .icon {
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 2rem;
+}
+
+.inputBox .input {
+  width: 100%;
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 2rem;
+  text-transform: none;
+  background: none;
+}

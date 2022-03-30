@@ -13,8 +13,9 @@
 }
 
 .text {
-  font-size: 1.8rem;
-  line-height: 2;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  line-height: 1.8;
   color: #ccc;
   padding: 2rem 0;
 }
