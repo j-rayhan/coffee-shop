@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './footer';
 import Header from './header';
 
 const withHeaderMenu = (ChildComponent: React.FC) =>
@@ -8,6 +9,7 @@ const withHeaderMenu = (ChildComponent: React.FC) =>
       return <div>
         <Header />
         <ChildComponent {...this.props} />
+        <Footer />
       </div>
     }
 

@@ -1,0 +1,55 @@
+.footer {
+  background-color: var(--bg);
+}
+
+.share {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faIcon {
+  padding: 1rem;
+  margin: 0.3rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.faIcon:hover {
+  background-color: var(--main-color);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.links a {
+  font-size: 2rem;
+  padding: 0.7rem 2rem;
+  border: var(--border);
+  color: #fff;
+}
+
+.links a:hover {
+  background-color: var(--main-color);
+}
+
+.credit {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;
+}
+
+.credit span {
+  margin: 0 0.7rem;
+  color: var(--main-color);
+}
