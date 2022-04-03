@@ -37,7 +37,7 @@ const Review: React.FC = () => {
             <div key={key} className={styles.box}>
 
               <Image src={quoteImg} alt="product" />
-              <p className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <p className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s </p>
               <div className={styles.image}>
                 <Image src={image} alt="user" />
               </div>

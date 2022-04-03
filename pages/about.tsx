@@ -18,7 +18,7 @@ const About: React.FC = () => {
           </div>
           <div className={styles.content}>
             <h3 className={styles.title}>what make our coffee special?</h3>
-            <p className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+            <p className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s </p>
             <p className={styles.text}>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
             <a href='/about-more' className='btn'>learn more</a>
           </div>

@@ -6,6 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta name='description' content='Created by MD Jahirul Islam' />
+          <link rel='manifest' href='/manifest.json' />
           <link rel='icon' href='/favicon.ico' />
           <link
             href='https://fonts.googleapis.com/icon?family=Material+Icons+Sharp'
